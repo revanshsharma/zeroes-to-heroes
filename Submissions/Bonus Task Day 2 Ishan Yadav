@@ -1,0 +1,7 @@
+secret_pass = "mypassword123"
+attempt = input("Enter your login key: ")
+
+if attempt == secret_pass:
+    print("Hooray! Login Successful.")
+else:
+    print("Nope! That password is wrong.")
