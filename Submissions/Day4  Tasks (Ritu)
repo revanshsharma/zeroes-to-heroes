@@ -1,0 +1,28 @@
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    age INTEGER
+);
+INSERT INTO users (id, name, email, age) VALUES
+(1, 'Alice Johnson', 'alice@gmail.com', 22),
+(2, 'Bob Smith', 'bob@yahoo.com', 17),
+(3, 'Charlie Brown', 'charlie@gmail.com', 30);
+SELECT * FROM users;
+SELECT * 
+FROM users
+WHERE age >= 18;
+UPDATE users
+SET age = 18
+WHERE id = 2;
+DELETE FROM users
+WHERE id = 1;
+SELECT * 
+FROM users
+ORDER BY age ASC;
+SELECT * 
+FROM users
+ORDER BY age DESC;
+SELECT * 
+FROM users
+WHERE email LIKE '%@gmail.com';
